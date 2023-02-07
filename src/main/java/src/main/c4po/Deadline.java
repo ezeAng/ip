@@ -39,7 +39,7 @@ public class Deadline extends Task {
                 byTimeStr = byTime.format(DateTimeFormatter.ofPattern("HHmm"));
             }
         } catch (DateTimeParseException d) {
-            System.out.println(dateTimeParseErrMsg);
+            Ui.print(dateTimeParseErrMsg);
         }
     }
 
